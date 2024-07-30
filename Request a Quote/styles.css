@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.top-bar {
+    background-color: #be87cc;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.contact-info span, .auth-links a {
+    margin-right: 20px;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #be87cc;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #be87cc;
+}
+
+nav ul li a:active {
+    background-color: #555;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.h4 img {
+    max-width: 50%;  /* Adjust size as needed */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Remove any inline spacing */
+    margin-left: auto; /* Move to the right */
+    margin-right: 20px;  /* Right margin */
+}
+
+.h2 {
+    background-color: gray;
+    height: 0;
+    width: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form .form-group:nth-child(odd) {
+    grid-column: 1;
+}
+
+form .form-group:nth-child(even) {
+    grid-column: 2;
+}
